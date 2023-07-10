@@ -1,0 +1,50 @@
+<!-- string Interpolation -->
+<p>{{ stringInterpolationVar }}</p> 
+<!-- string Interpolation -->
+
+<!-- property binding -->
+<button [disabled]="propToSet">Property binding</button> 
+<!-- property binding -->
+<br><br>
+
+<!-- 2 WAY BINDING -->
+<input type="Text" [(ngModel)]="modelData" />
+<p>{{modelData}}</p>
+<!-- 2 WAY BINDING -->
+
+<!-- EVENT BINDING -->
+<input type = "text" (input) = "InputEvent($event)" />
+<p>{{eventdata}}</p>
+<!-- EVENT BINDING -->
+
+<!--=============== Directive ================= -->
+
+<!-- structural directive -->
+
+<p *ngIf = "isParaShown; else elseBlockIshere">This para is handling ngIf</p>
+
+<ng-template #elseBlockIshere>
+    <p>This para is handling else condition of ngIf</p>
+</ng-template>
+
+<div [ngSwitch]="switch_expression">
+    <p *ngSwitchCase="1">ngSwitchCase="1"</p>
+    <p *ngSwitchCase="2">ngSwitchCase="2"</p>
+    <p *ngSwitchCase="3">ngSwitchCase="3"</p>
+</div>
+
+<div *ngFor = "let c of dataforLoop; let i = index">
+<p>Value : {{c}}</p>
+<p>Index : {{i}}</p>
+</div>
+
+<!-- Structural directive -->
+
+<!-- Attribute directive -->
+<div [ngStyle] = "{backgroundColor: getColor() }"> Style with ngStyle </div>
+
+<div [ngClass] = "{Classname: conditionToFeedColor === 'yess' }"> Style with ngClass </div>
+<!-- Attribute directive -->
+
+
+<!--=============== Directive ================= -->
