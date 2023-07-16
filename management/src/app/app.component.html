@@ -1,1 +1,11 @@
 <app-binding-event-attribute></app-binding-event-attribute>
+
+
+<app-custom-property-binding-child [inputProp]="personalDetails"></app-custom-property-binding-child>
+
+<app-custom-property-binding-parent 
+(userCreated) = "OnUserCreate($event)">
+</app-custom-property-binding-parent>
+
+<div *ngFor = "let x of userData">data from ParentComponent app comp 
+    using @Output :: id = {{x.id}}, name = {{x.name}}, department = {{x.dept}}</div>

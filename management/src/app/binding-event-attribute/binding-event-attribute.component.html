@@ -1,3 +1,4 @@
+<h3 style="text-align: center;">Different bindings & attributes</h3>
 <!-- string Interpolation -->
 <p>{{ stringInterpolationVar }}</p> 
 <!-- string Interpolation -->
@@ -8,12 +9,12 @@
 <br><br>
 
 <!-- 2 WAY BINDING -->
-<input type="Text" [(ngModel)]="modelData" />
+2 WAY BINDING: <input type="Text" [(ngModel)]="modelData" />
 <p>{{modelData}}</p>
 <!-- 2 WAY BINDING -->
 
 <!-- EVENT BINDING -->
-<input type = "text" (input) = "InputEvent($event)" />
+EVENT BINDING($event): <input type = "text" (input) = "InputEvent($event)" />
 <p>{{eventdata}}</p>
 <!-- EVENT BINDING -->
 
@@ -45,6 +46,5 @@
 
 <div [ngClass] = "{Classname: conditionToFeedColor === 'yess' }"> Style with ngClass </div>
 <!-- Attribute directive -->
-
-
 <!--=============== Directive ================= -->
+<hr>
