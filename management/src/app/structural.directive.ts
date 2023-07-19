@@ -1,4 +1,4 @@
-import { Directive, Input, OnChanges, Renderer2, TemplateRef, ViewChildrenDecorator, ViewContainerRef } from '@angular/core';
+import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 
 @Directive({
   selector: '[appStructural]'
