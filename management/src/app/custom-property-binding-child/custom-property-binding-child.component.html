@@ -3,3 +3,10 @@
 <p>Id is: {{inputProp.id}}</p>
 <p>Name is: {{inputProp.name}}</p>
 <p>Address is: {{inputProp.address}}</p>
+<br><br>
+View child : <input type = "text" #viewChild> 
+
+<button (click) = "GetDataViewChild()">Get data using @ViewChild</button>
+<br><br>
+data reveiced using ViewChild : <input type="text" [(ngModel)]="data" [disabled] = true/>
+<br><br>

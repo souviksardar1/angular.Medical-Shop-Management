@@ -4,7 +4,10 @@
 <app-custom-property-binding-child [inputProp]="personalDetails"></app-custom-property-binding-child>
 
 <app-custom-property-binding-parent 
-(userCreated) = "OnUserCreate($event)">
+(userCreated) = "OnUserCreate($event)"> 
+
+<p>this is para set inside parent attribute in app comp and accessing in 
+    parent.html using 'ngcontent'</p>
 </app-custom-property-binding-parent>
 
 <div *ngFor = "let x of userData">data from ParentComponent app comp 
