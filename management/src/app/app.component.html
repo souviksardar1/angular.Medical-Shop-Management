@@ -12,3 +12,7 @@
 
 <div *ngFor = "let x of userData">data from ParentComponent app comp 
     using @Output :: id = {{x.id}}, name = {{x.name}}, department = {{x.dept}}</div>
+
+<p appAttribute>This para is colored with custom attribute directive</p>    
+
+<p *appStructural = "conditionForStructuralDirective">This para is showed using custom structural directive</p>  
