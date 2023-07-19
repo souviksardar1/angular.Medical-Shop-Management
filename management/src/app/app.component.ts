@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'management';
   personalDetails = {id: "1", name: "souvik", address: "India"};
   userData: { id: string, name: string, dept: string } []= [];
-  conditionForStructuralDirective: boolean = true;
+  conditionForStructuralDirective: boolean = false;
 
   OnUserCreate(data: {id: string, name: string, dept: string}){
     console.log("asssa"+data.id);
