@@ -7,8 +7,8 @@ import { BindingEventAttributeComponent } from './binding-event-attribute/bindin
 import { FormsModule } from '@angular/forms';
 import { CustomPropertyBindingChildComponent } from './custom-property-binding-child/custom-property-binding-child.component';
 import { CustomPropertyBindingParentComponent } from './custom-property-binding-parent/custom-property-binding-parent.component';
-import { StructuralDirective } from './structural.directive';
-import { AttributeDirective } from './attribute.directive';
+import { StructuralDirective } from './directives/structural.directive';
+import { AttributeDirective } from './directives/attribute.directive';
 
 @NgModule({
   declarations: [
