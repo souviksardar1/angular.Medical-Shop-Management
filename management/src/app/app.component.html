@@ -15,4 +15,11 @@
 
 <p appAttribute>This para is colored with custom attribute directive</p>    
 
-<p *appStructural = "conditionForStructuralDirective">This para is showed using custom structural directive</p>  
+<p *appStructural = "conditionForStructuralDirective">This para is showed using custom structural
+     directive</p>  
+
+<input type="text" [(ngModel)] = "printVarForService"/>  
+<br><br>
+<app-compoment-communication-by-service></app-compoment-communication-by-service>
+<button (click) = "CompCommune()">Comp Commune using service</button>
+<input type="text" [(ngModel)] = "compCommu"/> 

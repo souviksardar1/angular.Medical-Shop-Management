@@ -9,6 +9,7 @@ import { CustomPropertyBindingChildComponent } from './custom-property-binding-c
 import { CustomPropertyBindingParentComponent } from './custom-property-binding-parent/custom-property-binding-parent.component';
 import { StructuralDirective } from './directives/structural.directive';
 import { AttributeDirective } from './directives/attribute.directive';
+import { CompomentCommunicationByServiceComponent } from './compoment-communication-by-service/compoment-communication-by-service.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AttributeDirective } from './directives/attribute.directive';
     CustomPropertyBindingChildComponent,
     CustomPropertyBindingParentComponent,
     StructuralDirective,
-    AttributeDirective
+    AttributeDirective,
+    CompomentCommunicationByServiceComponent
   ],
   imports: [
     BrowserModule,
